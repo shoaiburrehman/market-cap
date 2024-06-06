@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
         backgroundColor: ThemeColors.primary,
         alignItems: 'center',
         justifyContent: 'center',
-        height: '35%'
+        paddingVertical: hp(80),
     },
     title: {
         fontSize: wp(20),

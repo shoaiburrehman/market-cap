@@ -22,7 +22,6 @@ const AppStack = () => {
                     tabBarStyle: styles.tabBar,
                     headerTitleAlign: 'center',
                     headerTitleStyle: { color: ThemeColors.primary },
-                    //header bottom border line or shadow remove
                     headerShadowVisible: false,
                 }}    
             >

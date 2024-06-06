@@ -1,5 +1,6 @@
 import React from 'react';
 import { TextInput, StyleSheet, TextInputProps } from 'react-native';
+import { hp, wp } from '../../utils/style.utils';
 
 interface InputFieldProps extends TextInputProps {
   value: string;
@@ -14,6 +15,7 @@ const InputField = ({ value, onChangeText, placeholder, ...props }: InputFieldPr
       value={value}
       onChangeText={onChangeText}
       placeholder={placeholder}
+      placeholderTextColor={'#ccc'}
       {...props}
     />
   );
@@ -23,9 +25,9 @@ const styles = StyleSheet.create({
   input: {
     borderColor: '#ccc',
     borderWidth: 1,
-    borderRadius: 8,
-    padding: 8,
-    marginBottom: 10,
+    borderRadius: wp(8),
+    padding: wp(8),
+    marginBottom: hp(10),
     backgroundColor: '#fff'
   }
 });
